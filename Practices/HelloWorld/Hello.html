@@ -1,0 +1,77 @@
+<html>
+    <title>
+        Hello World application
+    </title>
+    <head>
+        <!--
+            for embedded css and js files 
+        -->
+    </head>
+    <body>
+        <h1>
+            Welcome to HTML
+        </h1>
+        <figure>
+                <a href="https://www.syncfusion.com/"> <img src="D:\HTML\images\home-banner-v6.webp" style="width: 800;height: 800;"> </a>
+            <figcaption >
+                syncfusion
+            </figcaption>
+            
+        </figure>
+        
+        <h4> <a href = "#typing">Typing</a></h4>
+        <h4><a href = "#Portability">Portability</a></h4>
+        <h4>Methods and functions</h4>
+        <blockquote><h6>Heading 6</h6></blockquote>
+        <p>Hi <abbr title="SELVABALA">Mr.</abbr><i><b>SELVABALA</b></i></p>
+        <p>
+            <q>Bathrakalipuram</q><br>Theni<br>TamilNadu
+            <acronym title="IND">India</acronym>
+        </p>
+        <p id = "Portability">
+            Portability
+By design, C# is the programming language that most
+ directly reflects the underlying Common Languag
+ e Infrastructure (CLI).[68] Most of its intrinsic 
+ types correspond to value-types implemented by the CLI f
+ ramework. However, the language specification does not state t
+ he code generation requirements of the compiler: that is, it does n
+ ot state that a C# compiler must target a Common Language Runtime,
+  or generate Common Intermediate Language (CIL), or generate any other
+   specific format. Some C# compilers can also generate machine code like traditional compilers of C++ or Fortran.[69][70]
+        </p>
+
+
+        <p id = "typing">
+            Typing
+C# supports strongly, implicitly typed variable declarations with the keyword var,[16]: 470  and implicitly typed arrays with the keyword new[] followed by a collection initializer.[16]: 80 [20]: 58 
+
+Its type system is split into two families: Value types, like the built-in numeric types and user-defined structs, which are automatically handed over as copies when used as parameters, and reference types, including arrays, instances of classes, and strings, which only hand over a pointer to the respective object. Due to their special handling of the equality operator, strings will nevertheless behave as if they were values, for all practical purposes. You can even use them as case labels. Where necessary, value types will be boxed automatically.[71]
+
+C# supports a strict Boolean data type, bool. Statements that take conditions, such as while and if, require an expression of a type that implements the true operator, such as the Boolean type. While C++ also has a Boolean type, it can be freely converted to and from integers, and expressions such as if (a) require only that a is convertible to bool, allowing a to be an int, or a pointer. C# disallows this "integer meaning true or false" approach, on the grounds that forcing programmers to use expressions that return exactly bool can prevent certain types of programming mistakes such as if (a = b) (use of assignment = instead of equality ==).
+
+C# is more type safe than C++. The only implicit conversions by default are those that are considered safe, such as widening of integers. This is enforced at compile-time, during JIT, and, in some cases, at runtime. No implicit conversions occur between Booleans and integers, nor between enumeration members and integers (except for literal 0, which can be implicitly converted to any enumerated type). Any user-defined conversion must be explicitly marked as explicit or implicit, unlike C++ copy constructors and conversion operators, which are both implicit by default.
+
+C# has explicit support for covariance and contravariance in generic types,[16]: 144 [20]: 23  unlike C++ which has some degree of support for contravariance simply through the semantics of return types on virtual methods.
+
+Enumeration members are placed in their own scope.
+
+The C# language does not allow for global variables or functions. All methods and members must be declared within classes. Static members of public classes can substitute for global variables and functions.
+
+Local variables cannot shadow variables of the enclosing block, unlike C and C++.
+
+
+        </p>
+
+        <p id = "methods">
+            Methods and functions
+A method in C# is a member of a class that can be invoked as a function (a sequence of instructions), rather than the mere value-holding capability of a field (i.e. class or instance variable).[76] As in other syntactically similar languages, such as C++ and ANSI C, the signature of a method is a declaration comprising in order: any optional accessibility keywords (such as private), the explicit specification of its return type (such as int, or the keyword void if no value is returned), the name of the method, and finally, a parenthesized sequence of comma-separated parameter specifications, each consisting of a parameter's type, its formal name and optionally, a default value to be used whenever none is provided. Different from most other languages, call-by-reference parameters have to be marked both at the function definition and at the calling site, and you can choose between ref and out, the latter allowing handing over an uninitialized variable which will have a definite value on return.[77] Additionally, you can specify a variable-sized argument list by applying the params keyword to the last parameter.[78] Certain specific kinds of methods, such as those that simply get or set a field's value by returning or assigning it, do not require an explicitly stated full signature, but in the general case, the definition of a class includes the full signature declaration of its methods.[79]
+
+Like C++, and unlike Java, C# programmers must use the scope modifier keyword virtual to allow methods to be overridden by subclasses. Unlike C++, you have to explicitly specify the keyword override when doing so.[80] This is supposed to avoid confusion between overriding and newly overloading a function (i.e. hiding the former implementation). To do the latter, you have to specify the new keyword.[81]
+
+Extension methods in C# allow programmers to use static methods as if they were methods from a class's method table, allowing programmers to virtually add instance methods to a class that they feel should exist on that kind of objects (and instances of the respective derived classes).[16]: 103–105 [20]: 202–203 
+
+The type dynamic allows for run-time method binding, allowing for JavaScript-like method calls and run-time object composition.[16]: 114–118 
+        </p>
+    </body>
+</html>

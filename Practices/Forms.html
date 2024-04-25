@@ -1,0 +1,92 @@
+<html>
+<title>Forms</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Forms">
+    <meta name = "author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <fieldset>
+        <legend>Contact form</legend>
+        <form action="" enctype="multipart/form-data">
+            <p>Name: <input type="text"></p>
+            <p>Gender: <input type="radio" name="" id="" value="male" checked>Male <t></t>
+                <input type="radio" name="" id="" value="female">Female
+            </p>
+            <label for="age">Age: <input type="number" name="age" id="age" required min="18" max="90"></label><br>
+            <label for="age">Age: <input type="range" name="age" id="age" required min="18" max="90" step="1" oninput="age.innerText = this.value"> </label>
+            <p>Hobbies: <br>
+            <input type="checkbox" name="hobbies[]" id="" value="books"> Reading books <br>
+            <input type="checkbox" name="hobbies[]" value="cricket"> Playing cricket <br>
+            <input type="checkbox" name="hobbies[]" value="gym"> Weight lifting <br>
+            </p>
+            <!-- <p>Year of Birth :
+                <select name="dateofyear" id="doy">
+                    <option value="" selected>Select date</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004" selected>2004</option>
+                </select>
+            </p> -->
+            <label for="dob">Date of birth: 
+                <input type="date" name="dob" id="dob">
+            </label>
+            <p>
+                Hobbies: <select name="Hobbies" multiple size="2"> </p>
+            <option value="books">Reading books</option>
+            <option value="gym">Gym training</option>
+            <option value="swim">Swimming</option>
+            <option value="cycling">Cycling</option>
+            </select>
+            <p>Attach your Picture:
+                <input type="file" name="my_file">
+            </p>
+            <p>email: <input type="email" name="" id=""></p>
+            <p>Messgae:<br> <textarea name="" id="" cols="30" rows="5">Enter text</textarea></p>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Login Form</legend>
+        <form action="" method="post">
+            <p>
+                <label><input type="text" name="username" placeholder="Name" value="Name"> </label>
+            </p>
+            <p>
+                Password: <input type="password" name="password" placeholder="Password" minlength="8">
+            </p>
+            <p>
+                <input type="submit" name="" id="" value="SUBMIT">
+            </p>
+        </form>
+        </fieldset>
+        <h1>HTML Tutorial</h1>
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/7cVpA4rME8w?si=dni2WFSmmeR5LzCw"
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+        web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
+
+        <!-- <h1>Video in mp4 format</h1>
+        <video src="4. Enumurated Types.mp4" controls width="560" 
+        height="315">
+        Sorry, this browser does not support this video.
+        </video> -->
+        <br>
+        <h2>Video in multiple format</h2>
+        <video controls width="560">
+            <source src="videos\4. Enumurated Types.avi" type="video/avi">
+            <source src="videos\4. Enumurated Types.mp4" type="video/mp4">
+        </video>
+
+
+</body>
+ 
+</html>
